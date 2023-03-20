@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.hospital.mapper.OfficeMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.hospital.domain.Office">
+            <id property="officeName" column="office_name" jdbcType="VARCHAR"/>
+            <result property="officePhone" column="office_phone" jdbcType="VARCHAR"/>
+            <result property="officeAddress" column="office_address" jdbcType="VARCHAR"/>
+            <result property="doctorName" column="doctor_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        office_name,office_phone,office_address,
+        doctor_name
+    </sql>
+</mapper>

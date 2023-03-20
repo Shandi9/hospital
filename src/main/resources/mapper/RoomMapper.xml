@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.hospital.mapper.RoomMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.hospital.domain.Room">
+            <id property="roomNo" column="room_no" jdbcType="VARCHAR"/>
+            <result property="roomOffice" column="room_office" jdbcType="VARCHAR"/>
+            <result property="roomMoney" column="room_money" jdbcType="VARCHAR"/>
+            <result property="roomBed" column="room_bed" jdbcType="INTEGER"/>
+            <result property="roomUsebed" column="room_usebed" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        room_no,room_office,room_money,
+        room_bed,room_usebed
+    </sql>
+</mapper>

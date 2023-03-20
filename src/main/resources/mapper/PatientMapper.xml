@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.hospital.mapper.PatientMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.hospital.domain.Patient">
+            <id property="patientNo" column="Patient_no" jdbcType="VARCHAR"/>
+            <result property="patientName" column="Patient_name" jdbcType="VARCHAR"/>
+            <result property="patientSex" column="Patient_sex" jdbcType="VARCHAR"/>
+            <result property="patientResult" column="Patient_result" jdbcType="VARCHAR"/>
+            <result property="patientRoomno" column="Patient_roomno" jdbcType="VARCHAR"/>
+            <result property="patientBedno" column="Patient_bedno" jdbcType="VARCHAR"/>
+            <result property="patientIntime" column="Patient_intime" jdbcType="DATE"/>
+            <result property="patientDoctor" column="Patient_doctor" jdbcType="VARCHAR"/>
+            <result property="patientNum" column="Patient_num" jdbcType="INTEGER"/>
+            <result property="creamTime" column="cream_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        Patient_no,Patient_name,Patient_sex,
+        Patient_result,Patient_roomno,Patient_bedno,
+        Patient_intime,Patient_doctor,Patient_num,
+        cream_time
+    </sql>
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.hospital.mapper.DoctorMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.hospital.domain.Doctor">
+            <id property="doctorNo" column="doctor_no" jdbcType="VARCHAR"/>
+            <result property="doctorName" column="doctor_name" jdbcType="VARCHAR"/>
+            <result property="doctorPost" column="doctor_post" jdbcType="VARCHAR"/>
+            <result property="doctorOffice" column="doctor_office" jdbcType="VARCHAR"/>
+            <result property="doctorAge" column="doctor_age" jdbcType="INTEGER"/>
+            <result property="doctorSex" column="doctor_sex" jdbcType="VARCHAR"/>
+            <result property="doctorNum" column="doctor_num" jdbcType="VARCHAR"/>
+            <result property="creamTime" column="cream_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        doctor_no,doctor_name,doctor_post,
+        doctor_office,doctor_age,doctor_sex,
+        doctor_num,cream_time
+    </sql>
+</mapper>

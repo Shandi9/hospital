@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.hospital.mapper.RegisterMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.hospital.domain.Register">
+            <id property="registerId" column="register_id" jdbcType="INTEGER"/>
+            <result property="registerPid" column="register_pid" jdbcType="INTEGER"/>
+            <result property="registerType" column="register_type" jdbcType="VARCHAR"/>
+            <result property="registerOffice" column="register_office" jdbcType="VARCHAR"/>
+            <result property="registerDid" column="register_did" jdbcType="INTEGER"/>
+            <result property="registerTime" column="register_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        register_id,register_pid,register_type,
+        register_office,register_did,register_time
+    </sql>
+</mapper>
